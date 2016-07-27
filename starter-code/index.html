@@ -36,15 +36,16 @@
     <script id="repo-template" type="text/x-handlebars-template">
       <li>
         <a href="{{html_url}}" target="_blank"><h3>{{name}}</h3></a>
-        <!-- TODO: fill in these  expressions... -->
-        <p>Description: {{description}}</p>
-        <p>Primary Language: {{language}}</p>
-        <p>Created: {{created_at}}</p>
-        <p>Last Updated: {{pushed_at}}</p>
+        <!-- TODO DONE: fill in these  expressions... -->
+        <p><span class="bold">Description:</span><br> {{description}}</p>
+        <p><span class="bold">Primary Language:</span><br> {{language}}</p>
+        <p><span class="bold">Created:</span><br> {{created_at}}</p>
+        <p><span class="bold">Last Updated:</span><br> {{pushed_at}}</p>
         {{#if watchers_count}}
           <p>{{watchers}} watching this repo</p>
         {{/if}}
       </li>
+      <hr>
     </script>
   </head>
   <body>
@@ -120,17 +121,17 @@
     <script src="/vendor/scripts/webdb.js"></script>
     <script src="/vendor/scripts/page.js"></script>
 
-    <!-- TODO: Include your secret GitHub token file, which should be gitingore'd,
+    <!-- TODO DONE: Include your secret GitHub token file, which should be gitingore'd,
       therefore recreated in every developer's environment. -->
+    <script src="githubToken.js"></script>
 
     <!-- Model files: -->
-    <!-- TODO: Be sure to include any new model files: -->
-    <script src="githubToken.js"></script>
+    <!-- TODO DONE: Be sure to include any new model files: -->
     <script src="/scripts/models/article.js"></script>
     <script src="/scripts/models/repo.js"></script>
 
     <!-- View files: -->
-    <!-- TODO: Be sure to include any new view files: -->
+    <!-- TODO DONE: Be sure to include any new view files: -->
     <script src="/scripts/views/articleView.js"></script>
     <script src="/scripts/views/adminView.js"></script>
     <script src="/scripts/views/repoView.js"></script>

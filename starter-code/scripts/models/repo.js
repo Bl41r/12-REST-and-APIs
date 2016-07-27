@@ -4,7 +4,7 @@
   reposObj.allRepos = [];
 
   reposObj.requestRepos = function(nextFunction) {
-    /* TODO: How would you like to fetch your repos? Someone say AJAX?!
+    /* TODO DONE: How would you like to fetch your repos? Someone say AJAX?!
       Do not forget to call the callback! */
     $.ajax({
       url: 'https://api.github.com/users/codefellows-seattle-301d9/repos' +

@@ -15,8 +15,16 @@ main {
 
 hr {
   margin: 1em;
-  width: 80%;
+  width: 60%;
+  margin-left: -0.4rem;
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #ffeaaa, #ffeaaa, #ffeaaa);
+  background-image: -moz-linear-gradient(left, #ffeaaa, #ffeaaa, #ffeaaa);
+  background-image: -ms-linear-gradient(left, #ffeaaa, #ffeaaa, #ffeaaa);
+  background-image: -o-linear-gradient(left, #ffeaaa, #ffeaaa, #ffeaaa); 
 }
+
 
 /*TEXT STYLES
 =======================================*/
